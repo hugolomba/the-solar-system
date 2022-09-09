@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@font-face {
+  font-family: SKCuber;
+  src: url(../fonts/SK-Cuber.ttf);
+}
+
+/* Variables */
+.earth {
+  color: rgb(92, 180, 247);
+}
+
+.mars {
+  --primary-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* max-width: 1400px; */
+
+  background-image: url(../img/background-mod.png);
+}
+
+#root {
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 6rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
+}
+
+.navbar ul {
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.navbar h1 {
+  font-family: "SKcuber", cursive;
+  margin: 1.2rem;
+  font-size: 2rem;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.planet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+.planet-image {
+  width: 30em;
+  height: auto;
+}
+
+.planet-information {
+  /* margin: 10rem; */
+  background-color: blueviolet;
+}
+
+.planet-resume {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.svg {
+  color: rgb(0, 250, 108);
+  width: 10rem;
+}
+
+.seta {
+  order: 0;
+  /* font-weight: 900; */
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+  /* color: red; */
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
+
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.planet h2 {
+  font-size: 3.5rem;
+}
+
+.planet h3 {
+  font-size: 1.5rem;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border-right: 1px solid rgb(92, 180, 247); */
+  /* border-left: 1px solid rgb(92, 180, 247); */
+  padding: 0 1.5rem;
+  /* border: 1px solid rgb(92, 180, 247); */
+  flex-wrap: wrap;
+}
+
+.info-cards {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.info-cards h4 {
+  color: rgb(92, 180, 247);
+}
+
+.info-cards h5 {
+  font-size: 1.5rem;
+}
+
+.info-cards2 {
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+.info-cards2 h4 {
+  color: rgb(92, 180, 247);
+}
