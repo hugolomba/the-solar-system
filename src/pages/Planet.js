@@ -27,7 +27,6 @@ const Planet = () => {
               <span className="earth">TYPE: </span>Terrestrial
             </h3>
           </div>
-
           <p className="planet-resume">
             Our home planet is the third planet from the Sun, and the only place
             we know of so far that’s inhabited by living things. While Earth is
