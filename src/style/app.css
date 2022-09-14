@@ -138,6 +138,7 @@
 
 .planet h2 {
   font-size: 3.5rem;
+  color: rgb(92, 180, 247);
 }
 
 .planet h3 {
@@ -158,6 +159,7 @@
 .info-cards {
   color: aliceblue;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 

@@ -10,35 +10,39 @@ import {
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { MdArrowForwardIos, MdOutlineArrowBackIosNew } from "react-icons/md";
 
+import { useParams } from "react-router-dom";
+
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 const Planet = () => {
+  const [planet, setPlanet] = useState([]);
+  const planetId = useParams();
+
+  useEffect(() => {
+    axios
+      .get(`https://api-solar-system.herokuapp.com/planet/${planetId.planeta}`)
+      .then((response) => {
+        setPlanet(response.data);
+      });
+  }, []);
+
   return (
     <div className="planet-container">
       <div className="planet">
         <div className="seta earth">
           <MdOutlineArrowBackIosNew />
         </div>
-        <img className="planet-image" src={earth} />
+        <img className="planet-image" src={planet.imageTwo || ""} />
         <div className="main">
           <div className="title">
-            <h2>
-              Earth <span className="earth">♁</span>
-            </h2>
+            <h2>{planet.name}</h2>
             <h3>
-              <span className="earth">TYPE: </span>Terrestrial
+              <span className="earth">TYPE: </span>
+              {planet.geography}
             </h3>
           </div>
-          <p className="planet-resume">
-            Our home planet is the third planet from the Sun, and the only place
-            we know of so far that’s inhabited by living things. While Earth is
-            only the fifth largest planet in the solar system, it is the only
-            world in our solar system with liquid water on the surface. Just
-            slightly larger than nearby Venus, Earth is the biggest of the four
-            planets closest to the Sun, all of which are made of rock and metal.
-            The name Earth is at least 1,000 years old. All of the planets,
-            except for Earth, were named after Greek and Roman gods and
-            goddesses. However, the name Earth is a Germanic word, which simply
-            means “the ground.”
-          </p>
+          <p className="planet-resume">{planet.resume}</p>
           {/* <div className="info-cards2 earth">
             <div className="info-card">
               <h4>DISTANCE FROM THE SUN</h4>
@@ -68,24 +72,40 @@ const Planet = () => {
       </div>
       <div className="info-cards">
         <div className="info-card">
-          <h4>DISTANCE FROM THE SUN</h4>
-          <h5>~ 150.000.000 Km</h5>
+          <h4>DISTÂNCIA DO SOL</h4>
+          <h5>{planet.features.sunDistance && planet.features.sunDistance}</h5>
         </div>
         <div className="info-card">
-          <h4>LENGHT OF YEAR</h4>
-          <h5>365.25 DAYS</h5>
+          <h4>TEMPO PARA A LUZ DO SOL CHEGAR</h4>
+          <h5>
+            {planet.features.oneWayLightToTheSun || "Informação não encontrada"}
+          </h5>
         </div>
         <div className="info-card">
-          <h4>TEMPERATURE</h4>
-          <h5>15 C</h5>
+          <h4>DURAÇÃO DE UM ANO</h4>
+          <h5>
+            {planet.features.orbitalPeriod || "Informação não encontrada"}
+          </h5>
         </div>
         <div className="info-card">
-          <h4>GRAVITY</h4>
-          <h5>9.807 m/s</h5>
+          <h4>DURAÇÃO DE UM DIA</h4>
+          <h5>
+            {planet.features.rotationDuration || "Informação não encontrada"}
+          </h5>
         </div>
         <div className="info-card">
-          <h4>MOONS</h4>
-          <h5>1</h5>
+          <h4>TEMPERATURA</h4>
+          <h5>{planet.features.temperature || "Informação não encontrada"}</h5>
+        </div>
+        <div className="info-card">
+          <h4>GRAVIDADE</h4>
+          <h5>{planet.features.gravity || "Informação não encontrada"}</h5>
+        </div>
+        <div className="info-card">
+          <h4>LUAS</h4>
+          <h5>
+            {planet.features.satellites.number || "Informação não encontrada"}
+          </h5>
         </div>
       </div>
     </div>
