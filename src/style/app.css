@@ -6,12 +6,59 @@
 }
 
 /* Variables */
-.earth {
-  color: rgb(92, 180, 247);
+.active {
+  border-bottom: 4px solid red;
+  border-color: aliceblue;
 }
 
-.mars {
-  --primary-color: red;
+.planet0 {
+  color: #d4ae03;
+  border-color: #d4ae03;
+}
+
+.planet1 {
+  color: #2f6ba0;
+  border-color: #2f6ba0;
+}
+
+.planet2 {
+  color: rgb(221, 165, 22);
+  border-color: rgb(221, 165, 22);
+}
+
+.planet3 {
+  color: rgb(92, 180, 247);
+  border-color: rgb(92, 180, 247);
+}
+
+.planet4 {
+  color: rgb(221, 80, 25);
+  border-color: rgb(221, 80, 25);
+}
+
+.planet5 {
+  color: rgb(225, 136, 141);
+  border-color: rgb(225, 136, 141);
+}
+
+.planet6 {
+  color: #ffdea0;
+  border-color: #ffdea0;
+}
+
+.planet7 {
+  color: rgb(55, 128, 195);
+  border-color: rgb(55, 128, 195);
+}
+
+.planet8 {
+  color: rgb(104, 147, 250);
+  border-color: rgb(104, 147, 250);
+}
+
+.planet9 {
+  color: rgb(225, 178, 148);
+  border-color: rgb(225, 178, 148);
 }
 
 * {
@@ -31,23 +78,20 @@
 .App {
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  align-content: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .navbar {
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 6rem;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  font-family: "League Spartan", sans-serif;
-  font-weight: 600;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
   margin-top: 1rem;
@@ -80,6 +124,12 @@
   width: 100%;
 }
 
+.planet-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
 .planet {
   display: flex;
   flex-direction: row;
@@ -88,7 +138,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 2rem;
+  /* margin: 2rem; */
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
 }
@@ -115,12 +165,33 @@
 
 .seta {
   order: 0;
-  /* font-weight: 900; */
+
   flex: 0 1 auto;
   font-size: 5rem;
   align-self: auto;
-  /* color: red; */
 }
+
+/* .seta-right {
+  order: 0;
+
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+
+  position: absolute;
+  left: 96rem;
+}
+
+.seta-left {
+  order: 0;
+
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+
+  position: absolute;
+  right: 96rem;
+} */
 
 .main {
   display: flex;
@@ -143,7 +214,7 @@
 
 .planet h2 {
   font-size: 3.5rem;
-  color: rgb(92, 180, 247);
+  /* color: rgb(92, 180, 247); */
 }
 
 .planet h3 {
@@ -168,12 +239,12 @@
   flex-direction: row;
   justify-content: center;
 
-  margin-top: 3rem;
+  margin-top: 4rem;
   gap: 1rem;
 }
 
 .info-cards h4 {
-  color: rgb(92, 180, 247);
+  /* color: rgb(92, 180, 247); */
 }
 
 .info-cards h5 {

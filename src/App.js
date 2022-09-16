@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Navbar planets={planets} />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/:planeta" element={<Planet />} />

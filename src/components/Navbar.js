@@ -1,20 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = ({ planets }) => {
-  // const findId = (name) => {
-
-  // }
-
   return (
     <nav className="navbar">
-      <h1>The Solar System</h1>
+      <Link to="/">
+        <h1>The Solar System</h1>
+      </Link>
       <ul>
         {planets.length > 0 &&
           planets.map((planeta) => {
             return (
               <li key={planeta.id}>
-                <NavLink to={`/${planeta.id}`}>
-                  {planeta.name.toUpperCase()}
+                <NavLink
+                  className={`planet${planeta.id}`}
+                  to={`/${planeta.id}`}
+                >
+                  {planeta.name === "Plutão"
+                    ? `Cadê ${planeta.name}?`
+                    : planeta.name.toUpperCase()}
+                  {/* {planeta.name.toUpperCase()} */}
                 </NavLink>
               </li>
             );
