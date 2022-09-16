@@ -6,10 +6,11 @@ import "./style/app.css";
 import axios from "axios";
 
 import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
-  const [planet, setPlanet] = useState([]);
-  const [planets, setPlanets] = useState([]);
+  const [planet, setPlanet] = useState({});
+  const [planets, setPlanets] = useState({});
 
   useEffect(() => {
     axios
@@ -19,11 +20,12 @@ function App() {
       });
   }, []);
 
-  console.log(planets);
+  // console.log(planets);
   return (
     <div className="App">
-      <Navbar />
+      <Navbar planets={planets} />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/:planeta" element={<Planet />} />
       </Routes>
 
