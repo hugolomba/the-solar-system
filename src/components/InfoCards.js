@@ -1,12 +1,10 @@
 const InfoCards = ({ planet }) => {
-  console.log(planet);
-
   const showInfo = (info) => {
     return info ? info : "?";
   };
 
   return (
-    <div className="info-cards">
+    <div className="info-cards-container">
       <div className="info-card">
         <h4 className={`planet${planet.id}`}>DISTÂNCIA DO SOL</h4>
         <h5>{showInfo(planet.features.sunDistance)}</h5>

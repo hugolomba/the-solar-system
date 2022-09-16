@@ -5,6 +5,7 @@ import Planet from "./pages/Planet";
 import ErrorPage from "./pages/ErrorPage";
 import "./style/app.css";
 import axios from "axios";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import InfoCards from "../components/InfoCards";
 import Loading from "../components/Loading";
 import PlanetInfo from "../components/PlanetInfo";
+import { Fade, Slide } from "react-awesome-reveal";
 
 const Planet = () => {
   const [planet, setPlanet] = useState({});
@@ -27,10 +28,9 @@ const Planet = () => {
   let foward = parseInt(planetId.planeta) + 1;
   let back = parseInt(planetId.planeta) - 1;
 
-  if (foward > 9) foward = 1;
+  if (foward > 9) foward = 0;
   if (back < 0) back = 9;
 
-  // console.log(foward, back);
   console.log(planet);
 
   return (
