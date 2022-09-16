@@ -53,6 +53,11 @@
   margin-top: 1rem;
 }
 
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
 .navbar ul {
   font-size: 1.1rem;
   display: flex;
@@ -186,4 +191,10 @@
 
 .info-cards2 h4 {
   color: rgb(92, 180, 247);
+}
+
+.homepage {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
 }
