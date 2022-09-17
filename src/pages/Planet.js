@@ -9,11 +9,17 @@ import InfoCards from "../components/InfoCards";
 import Loading from "../components/Loading";
 import PlanetInfo from "../components/PlanetInfo";
 import { Fade, Slide } from "react-awesome-reveal";
+import Peso from "../components/Peso";
+import ColoredLine from "../components/ColoredLine";
 
 const Planet = () => {
   const [planet, setPlanet] = useState({});
   const [loading, setLoading] = useState(true);
+
   const planetId = useParams();
+
+  console.log("planetID", planetId);
+  console.log("planet", planet);
 
   useEffect(() => {
     axios
@@ -30,8 +36,6 @@ const Planet = () => {
 
   if (foward > 9) foward = 0;
   if (back < 0) back = 9;
-
-  console.log(planet);
 
   return (
     <div className="planet-container">
