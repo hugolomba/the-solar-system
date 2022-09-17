@@ -5,13 +5,12 @@ import Planet from "./pages/Planet";
 import ErrorPage from "./pages/ErrorPage";
 import "./style/app.css";
 import axios from "axios";
-import { Fade, Slide } from "react-awesome-reveal";
 
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 function App() {
-  const [planet, setPlanet] = useState({});
+  // const [planet, setPlanet] = useState({});
   const [planets, setPlanets] = useState({});
 
   useEffect(() => {
@@ -26,6 +25,8 @@ function App() {
   return (
     <div className="App">
       <Navbar planets={planets} />
+
+      {/* <Loading /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
