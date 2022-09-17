@@ -5,13 +5,9 @@
   src: url(../fonts/SK-Cuber.ttf);
 }
 
-/* Variables */
-.earth {
-  color: rgb(92, 180, 247);
-}
-
-.mars {
-  --primary-color: red;
+.active {
+  border-bottom: 4px solid red;
+  border-color: aliceblue;
 }
 
 * {
@@ -31,23 +27,20 @@
 .App {
   display: flex;
   flex-direction: column;
+  max-width: 1500px;
+  align-content: center;
+  margin: 0 auto;
+  position: relative;
 }
 
 .navbar {
   color: white;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   font-family: "League Spartan", sans-serif;
   font-weight: 600;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 6rem;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  font-family: "League Spartan", sans-serif;
-  font-weight: 600;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 5rem;
   margin-top: 1rem;
@@ -65,6 +58,7 @@
   gap: 1rem;
   list-style-type: none;
   text-decoration: none;
+  margin: 0 1.3rem;
 }
 
 .navbar h1 {
@@ -80,6 +74,12 @@
   width: 100%;
 }
 
+.planet-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
 .planet {
   display: flex;
   flex-direction: row;
@@ -88,7 +88,7 @@
   justify-content: center;
   align-content: center;
   align-items: center;
-  margin: 2rem;
+  /* margin: 2rem; */
   color: aliceblue;
   font-family: "Open Sans", sans-serif;
 }
@@ -104,8 +104,17 @@
 }
 
 .planet-resume {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   text-align: justify;
+}
+
+.planet h2 {
+  font-size: 3rem;
+  /* color: rgb(92, 180, 247); */
+}
+
+.planet h3 {
+  font-size: 1.5rem;
 }
 
 .svg {
@@ -115,12 +124,33 @@
 
 .seta {
   order: 0;
-  /* font-weight: 900; */
+
   flex: 0 1 auto;
   font-size: 5rem;
   align-self: auto;
-  /* color: red; */
 }
+
+/* .seta-right {
+  order: 0;
+
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+
+  position: absolute;
+  left: 96rem;
+}
+
+.seta-left {
+  order: 0;
+
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+
+  position: absolute;
+  right: 96rem;
+} */
 
 .main {
   display: flex;
@@ -141,43 +171,88 @@
   align-items: baseline;
 }
 
-.planet h2 {
-  font-size: 3.5rem;
-  color: rgb(92, 180, 247);
+.homepage {
+  font-size: 5rem;
+  color: white;
+  text-align: center;
 }
 
-.planet h3 {
+.loader-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  margin-top: 5rem;
+  width: 30%;
+}
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error-container p {
+  color: white;
   font-size: 1.5rem;
+}
+
+.error-img {
+  width: 35rem;
+  height: auto;
+}
+
+.adicional-info {
+  display: flex;
+  margin-top: 4rem;
+  justify-content: space-between;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+  /* margin-top: 4rem; */
+  gap: 0.5rem;
+  width: 30%;
+}
+
+.btn-container button {
+  width: 80%;
+  padding: 0.4rem;
 }
 
 .info-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border-right: 1px solid rgb(92, 180, 247); */
-  /* border-left: 1px solid rgb(92, 180, 247); */
-  padding: 0 1.5rem;
-  /* border: 1px solid rgb(92, 180, 247); */
   flex-wrap: wrap;
 }
 
-.info-cards {
+.info-cards-container {
   color: aliceblue;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
 
-  margin-top: 3rem;
+  /* margin-top: 4rem; */
   gap: 1rem;
+  width: 70%;
 }
 
 .info-cards h4 {
-  color: rgb(92, 180, 247);
+  /* color: rgb(92, 180, 247); */
+  font-size: 1rem;
 }
 
 .info-cards h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .info-cards2 {
@@ -193,8 +268,126 @@
   color: rgb(92, 180, 247);
 }
 
-.homepage {
-  font-size: 5rem;
+.btn {
+  font-size: 17px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  background: dodgerblue;
   color: white;
-  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:active {
+  transform: translate(0em, 0.2em);
+}
+
+.planet0 {
+  color: #d4ae03;
+  border-color: #d4ae03;
+  /* text-shadow: 2px 2px #d4ae03; */
+}
+
+.planet0 button {
+  background: #d4ae03;
+}
+
+.planet1 {
+  color: #2f6ba0;
+  border-color: #2f6ba0;
+}
+
+.planet1 button {
+  background: #2f6ba0;
+}
+
+.planet2 {
+  color: rgb(221, 165, 22);
+  border-color: rgb(221, 165, 22);
+}
+
+.planet2 button {
+  background: rgb(221, 165, 22);
+}
+
+.planet3 {
+  color: rgb(92, 180, 247);
+  border-color: rgb(92, 180, 247);
+}
+
+.planet3 button {
+  background: rgb(92, 180, 247);
+}
+
+.planet4 {
+  color: rgb(221, 80, 25);
+  border-color: rgb(221, 80, 25);
+}
+
+.planet4 button {
+  background: rgb(221, 80, 25);
+}
+
+.planet5 {
+  color: rgb(225, 136, 141);
+  border-color: rgb(225, 136, 141);
+}
+
+.planet5 button {
+  background: rgb(225, 136, 141);
+}
+
+.planet6 {
+  color: #ffdea0;
+  border-color: #ffdea0;
+}
+
+.planet6 button {
+  background: #ffdea0;
+}
+
+.planet7 {
+  color: rgb(55, 128, 195);
+  border-color: rgb(55, 128, 195);
+}
+
+.planet7 button {
+  background: rgb(55, 128, 195);
+}
+
+.planet8 {
+  color: rgb(104, 147, 250);
+  border-color: rgb(104, 147, 250);
+}
+
+.planet8 button {
+  background: rgb(104, 147, 250);
+}
+
+.planet9 {
+  color: rgb(225, 178, 148);
+  border-color: rgb(225, 178, 148);
+}
+
+.planet9 button {
+  background: rgb(225, 178, 148);
 }

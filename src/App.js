@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Planet from "./pages/Planet";
+import ErrorPage from "./pages/ErrorPage";
 import "./style/app.css";
 import axios from "axios";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -24,9 +26,11 @@ function App() {
   return (
     <div className="App">
       <Navbar planets={planets} />
+
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/:planeta" element={<Planet />} />
+        <Route path="/planeta/:planeta" element={<Planet />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
 
       <Footer />
