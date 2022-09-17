@@ -5,6 +5,7 @@ import Planet from "./pages/Planet";
 import ErrorPage from "./pages/ErrorPage";
 import "./style/app.css";
 import axios from "axios";
+import About from "./pages/About";
 
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
@@ -29,7 +30,8 @@ function App() {
       {/* <Loading /> */}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* <Route path="/" element={<Home />} />A */}
+        <Route path="/" element={<About />} />
         <Route path="/planeta/:planeta" element={<Planet />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
