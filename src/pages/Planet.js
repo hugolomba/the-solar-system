@@ -22,13 +22,14 @@ const Planet = () => {
   console.log("planet", planet);
 
   useEffect(() => {
+    setLoading(true);
     axios
       .get(`https://api-solar-system.herokuapp.com/planet/${planetId.planeta}`)
       .then((response) => {
         setPlanet(response.data);
       })
-      .then(() => setLoading(false))
-      .catch((error) => console.log(error));
+      .catch((error) => console.log(error))
+      .finally(() => setLoading(false));
   }, [planetId]);
 
   let foward = parseInt(planetId.planeta) + 1;
