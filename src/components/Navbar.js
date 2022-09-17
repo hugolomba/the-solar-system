@@ -1,4 +1,5 @@
 import { NavLink, Link } from "react-router-dom";
+import {BsInfoCircleFill} from "react-icons/bs";
 
 const Navbar = ({ planets }) => {
   return (
@@ -16,13 +17,14 @@ const Navbar = ({ planets }) => {
                   to={`/planeta/${planeta.id}`}
                 >
                   {planeta.name === "Plutão"
-                    ? `Cadê ${planeta.name}?`
+                    ? ` ${planeta.name}?`
                     : planeta.name.toUpperCase()}
                   {/* {planeta.name.toUpperCase()} */}
                 </NavLink>
               </li>
             );
           })}
+          <Link to="/about"><BsInfoCircleFill /></Link>
       </ul>
     </nav>
   );

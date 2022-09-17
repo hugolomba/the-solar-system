@@ -1,6 +1,38 @@
 .about {
     color: white;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    padding: 0 6rem;
+}
 
+.dev-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.dev{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 0.5rem;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+}
+
+.contacts a{
+    color: white;
+}
+
+.dev img{
+    width: 10rem;
+    height: auto;
 }
