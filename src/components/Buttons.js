@@ -1,3 +1,4 @@
+import "./Buttons.css";
 import { useState } from "react";
 import Peso from "./Peso";
 

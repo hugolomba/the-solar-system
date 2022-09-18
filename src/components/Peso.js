@@ -15,43 +15,61 @@ const findWord = (planetName) => {
 // const calcPeso = (e) => {};
 
 const Peso = ({ planet, clickHandler }) => {
-  const [peso, setPeso] = useState(0);
+  const [peso, setPeso] = useState();
   const [pesoConvertido, setPesoConvertido] = useState();
 
-  const calcPeso = () => {
+  const handleCalcPeso = () => {
     // PESO = MASSA * GRAVIDADE
     // O que vemos na balança é a massa, o peso é em Newtons
     let pesoN = peso * 1.6;
     let convert = pesoN / 9.8;
     setPesoConvertido(convert);
+
     // setPeso(0);
   };
 
+  const handleReset = () => {
+    setPeso("");
+    setPesoConvertido(0);
+  };
+
   return (
-    <div className={`peso-container`}>
+    <div className={`peso-container planet${planet.id}`}>
       <AiFillCloseCircle onClick={clickHandler} />
       <h2 className={`planet${planet.id}`}>
         Qual seria o Seu peso {findWord(planet.name)} {planet.name}?
       </h2>
-
-      <label for="peso-terra">Peso na Terra</label>
-      <input
-        type="number"
-        id="peso-terra"
-        onChange={(e) => {
-          setPeso(e.target.value);
-        }}
-      />
-      {console.log(peso)}
-      <button onClick={calcPeso}>Converter</button>
-      {pesoConvertido && (
+      <div className="convert-container">
+        <label for="peso-terra">Insira o seu peso na Terra</label>
+        <input
+          type="number"
+          id="peso-terra"
+          value={peso}
+          placeholder="valor em Kg"
+          onChange={(e) => {
+            setPeso(e.target.value);
+            console.log("target.value: ", e.target.value);
+            console.log("peso enquanto muda: ", peso);
+          }}
+        />
+        <div className="btn-convert-container">
+          <button className="convert-btn" onClick={handleCalcPeso}>
+            Converter
+          </button>
+          <button className="convert-btn" onClick={handleReset}>
+            Reset
+          </button>
+        </div>
+      </div>
+      <div className="convert-result">
         <p>
           Se você estivesse {findWord(planet.name)} {planet.name}, seu peso
-          seria: {pesoConvertido.toFixed(2)} Kg.
+          seria:
         </p>
-      )}
+        <p>{pesoConvertido ? `${pesoConvertido.toFixed(2)} Kg` : "???"}</p>
+      </div>
 
-      <p>Explicação</p>
+      {/* <p>Explicação</p> */}
     </div>
   );
 };

@@ -1,0 +1,59 @@
+.planet0 {
+  --color: #d4ae03;
+  --border-color: #d4ae03;
+  --background: rgba(212, 174, 3, 0.25);
+}
+
+.planet1 {
+  --color: #2f6ba0;
+  --border-color: #2f6ba0;
+  --background: rgba(47, 107, 160, 0.25);
+}
+
+.planet2 {
+  --color: rgb(221, 165, 22);
+  --border-color: rgb(221, 165, 22);
+  --background: rgba(221, 165, 22, 0.25);
+}
+
+.planet3 {
+  --color: rgb(92, 180, 247);
+  --border-color: rgb(92, 180, 247);
+  --background: rgba(92, 180, 247, 0.25);
+}
+
+.planet4 {
+  --color: rgb(221, 80, 25);
+  --border-color: rgb(221, 80, 25);
+  --background: rgba(221, 80, 25, 0.25);
+}
+
+.planet5 {
+  --color: rgb(225, 136, 141);
+  --border-color: rgb(225, 136, 141);
+  --background: rgba(225, 136, 141, 0.25);
+}
+
+.planet6 {
+  --color: #ffdea0;
+  --border-color: #ffdea0;
+  --background: rgba(255, 222, 160, 0.25);
+}
+
+.planet7 {
+  --color: rgb(55, 128, 195);
+  --border-color: rgb(55, 128, 195);
+  --background: rgba(55, 128, 195, 0.25);
+}
+
+.planet8 {
+  --color: rgb(104, 147, 250);
+  --border-color: rgb(104, 147, 250);
+  --background: rgba(104, 147, 250, 0.25);
+}
+
+.planet9 {
+  --color: rgb(225, 178, 148);
+  --border-color: rgb(225, 178, 148);
+  --background: rgba(225, 178, 148, 0.25);
+}

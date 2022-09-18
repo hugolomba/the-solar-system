@@ -1,3 +1,5 @@
+import "./InfoCards.css";
+
 const InfoCards = ({ planet }) => {
   const showInfo = (info) => {
     return info ? info : "?";

@@ -1,9 +1,7 @@
+import "./PlanetInfo.css";
 import { Slide } from "react-awesome-reveal";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
-import Peso from "./Peso";
-import { useState } from "react";
-import ColoredLine from "./ColoredLine";
 
 const PlanetInfo = ({ planet }) => {
   return (
@@ -15,7 +13,9 @@ const PlanetInfo = ({ planet }) => {
             <div className="title">
               <h2 className={`planet${planet.id}`}>{planet.name}</h2>
               <h3>
-                <span className={`planet${planet.id}`}>TIPO: </span>
+                <span className={`planet-type-span planet${planet.id}`}>
+                  TIPO:{" "}
+                </span>
                 {planet.geography.lenght > 0
                   ? planet.geography
                   : "TIPO_PLANETA"}

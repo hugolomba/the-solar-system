@@ -1,0 +1,19 @@
+@import "../style/variables.css";
+
+.planet-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.seta {
+  order: 0;
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+}
+
+.seta a {
+  color: var(--color);
+}
