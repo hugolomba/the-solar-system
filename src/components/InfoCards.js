@@ -2,8 +2,10 @@ import "./InfoCards.css";
 
 const InfoCards = ({ planet }) => {
   const showInfo = (info) => {
-    return info ? info : "?";
+    return info >= 0 ? info : "?";
   };
+
+  console.log();
 
   return (
     <div className="info-cards-container">

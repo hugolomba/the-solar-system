@@ -54,10 +54,6 @@
   font-size: 1.5rem;
 }
 
-.adicional-info:before {
-  content: "";
-}
-
 .adicional-info {
   display: flex;
   margin-top: 3rem;

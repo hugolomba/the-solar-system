@@ -8,7 +8,10 @@ const PlanetInfo = ({ planet }) => {
     <div>
       <Slide>
         <div className="planet">
-          <img className="planet-image" src={planet.image} />
+          <div className="planet-image-container">
+            <img className="planet-image" src={planet.images.png} />
+          </div>
+
           <div className="main">
             <div className="title">
               <h2 className={`planet${planet.id}`}>{planet.name}</h2>
@@ -16,9 +19,7 @@ const PlanetInfo = ({ planet }) => {
                 <span className={`planet-type-span planet${planet.id}`}>
                   TIPO:{" "}
                 </span>
-                {planet.geography.lenght > 0
-                  ? planet.geography
-                  : "TIPO_PLANETA"}
+                {planet.type ? planet.type : "TIPO_PLANETA"}
               </h3>
             </div>
             <p className="planet-resume">
