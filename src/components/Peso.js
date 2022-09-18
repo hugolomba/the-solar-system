@@ -21,9 +21,10 @@ const Peso = ({ planet, clickHandler }) => {
   const handleCalcPeso = () => {
     // PESO = MASSA * GRAVIDADE
     // O que vemos na balança é a massa, o peso é em Newtons
-    let pesoN = peso * 1.6;
+    let pesoN = peso * parseFloat(planet.features.gravity.slice(0, -5));
     let convert = pesoN / 9.8;
     setPesoConvertido(convert);
+    console.log(parseFloat(planet.features.gravity.slice(0, -5)));
 
     // setPeso(0);
   };
@@ -69,7 +70,14 @@ const Peso = ({ planet, clickHandler }) => {
         <p>{pesoConvertido ? `${pesoConvertido.toFixed(2)} Kg` : "???"}</p>
       </div>
 
-      {/* <p>Explicação</p> */}
+      {/* <div className="explication-container">
+        <h4>Peso = massa x gravidade</h4>
+        <p>
+          OBS: O que popularmente entendemos como peso e medimos em Kg, é na
+          realidade a massa.
+          O resultado aqui é 
+        </p>
+      </div> */}
     </div>
   );
 };

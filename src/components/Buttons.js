@@ -21,12 +21,22 @@ const Buttons = ({ planet }) => {
 
   return (
     <div className={`btn-container planet${planet.id}`}>
-      <button className="btn" onClick={clickHandler}>
-        Quando você pesaria {findWord(planet.name)} {planet.name}?
-      </button>
-      <button className="btn">
-        Qual seria sua idade {findWord(planet.name)} {planet.name}?
-      </button>
+      {planet.name !== "Terra" ? (
+        <button className="btn" onClick={clickHandler}>
+          Quando você pesaria {findWord(planet.name)} {planet.name}?
+        </button>
+      ) : (
+        ""
+      )}
+
+      {planet.name === "Terra" || planet.name === "Sol" ? (
+        ""
+      ) : (
+        <button className="btn">
+          Qual seria sua idade {findWord(planet.name)} {planet.name}?
+        </button>
+      )}
+
       <button className="btn">Galeria de imagens da NASA</button>
 
       {planet.features && showWeight ? (

@@ -6,7 +6,7 @@
   background-color: var(--color);
   position: absolute;
   right: 8rem;
-  top: -24rem;
+  top: 1rem;
   width: 45vw;
   height: 46vh;
   display: flex;
@@ -18,12 +18,13 @@
 .peso-container svg {
   font-size: 2rem;
   position: absolute;
-  right: 1rem;
-  top: 1rem;
+  right: 0.5rem;
+  top: 0.5rem;
 }
 
 .peso-container h2 {
   font-size: 2rem;
+  color: white;
 }
 
 .convert-btn {
@@ -43,7 +44,7 @@
 }
 
 .convert-container input {
-  width: 5rem;
+  width: 8rem;
   height: 2rem;
   border: 2px solid black;
   text-align: center;
