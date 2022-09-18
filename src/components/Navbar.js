@@ -1,5 +1,6 @@
+import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
-import {BsInfoCircleFill} from "react-icons/bs";
+import { BsInfoCircleFill } from "react-icons/bs";
 
 const Navbar = ({ planets }) => {
   return (
@@ -24,7 +25,9 @@ const Navbar = ({ planets }) => {
               </li>
             );
           })}
-          <Link to="/about"><BsInfoCircleFill /></Link>
+        <Link to="/about">
+          <BsInfoCircleFill />
+        </Link>
       </ul>
     </nav>
   );

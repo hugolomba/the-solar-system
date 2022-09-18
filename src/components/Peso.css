@@ -1,13 +1,30 @@
 .peso-container {
-  background-color: white;
+  /* background-image: url("../img/info-bg.png");
+  background-size: contain; */
+  background-color: rgb(255, 255, 255);
+  /* border: 2px solid white; */
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/grid.svg); */
+  background-size: 2%;
+
+  display: inline-block;
+  /* width: 20%; */
+  /* margin: 5% auto; */
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  /* padding: 1em; */
+  /* line-height: 1.5em; */
+  background: hsla(67, 95%, 95%, 1);
+  background-color: var(--bg-color);
+  border: solid 10px rgb(255, 255, 255);
+
   position: absolute;
   right: 0rem;
   top: -28rem;
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 
@@ -16,4 +33,46 @@
   position: absolute;
   right: 1rem;
   top: 1rem;
+}
+
+.peso-container h2 {
+  font-size: 2rem;
+}
+
+.convert-btn {
+  padding: 0.5rem 0.5rem;
+  width: 6rem;
+}
+
+.convert-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.convert-container label {
+  font-size: 1.5rem;
+}
+
+.convert-container input {
+  width: 5rem;
+  height: 2rem;
+}
+
+.convert-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.convert-result p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.btn-convert-container {
+  display: flex;
+  gap: 1rem;
 }

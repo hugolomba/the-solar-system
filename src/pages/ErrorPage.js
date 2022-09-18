@@ -1,3 +1,4 @@
+import "./ErrorPage.css";
 import error from "../img/error.png";
 
 const ErrorPage = () => {

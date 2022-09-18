@@ -1,0 +1,65 @@
+.planet {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  /* margin: 2rem; */
+  color: aliceblue;
+  font-family: "Open Sans", sans-serif;
+}
+
+.planet-image {
+  width: 30em;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  order: 0;
+  flex: 2 1 auto;
+  align-self: auto;
+
+  align-items: center;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: baseline;
+}
+
+.planet-information {
+  /* margin: 10rem; */
+  background-color: blueviolet;
+}
+
+.planet-resume {
+  /* font-size: 1.1rem; */
+  text-align: justify;
+}
+
+.planet h2 {
+  font-size: 3rem;
+  /* color: rgb(92, 180, 247); */
+}
+
+.planet h3 {
+  font-size: 1.5rem;
+}
+
+.adicional-info:before {
+  content: "";
+}
+
+.adicional-info {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}

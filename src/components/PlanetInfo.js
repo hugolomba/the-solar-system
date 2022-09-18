@@ -1,9 +1,7 @@
+import "./PlanetInfo.css";
 import { Slide } from "react-awesome-reveal";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
-import Peso from "./Peso";
-import { useState } from "react";
-import ColoredLine from "./ColoredLine";
 
 const PlanetInfo = ({ planet }) => {
   return (
