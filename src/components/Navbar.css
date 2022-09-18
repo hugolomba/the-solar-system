@@ -31,3 +31,8 @@
   margin: 1.2rem;
   font-size: 2rem;
 }
+
+.active {
+  border-bottom: 4px solid red;
+  border-color: var(--border-color);
+}

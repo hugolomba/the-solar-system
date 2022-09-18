@@ -15,6 +15,10 @@
   flex-wrap: wrap;
 }
 
+.info-card h4 {
+  color: var(--color);
+}
+
 .info-cards h4 {
   font-size: 1rem;
 }

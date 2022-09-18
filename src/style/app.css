@@ -5,11 +5,6 @@
   src: url(../fonts/SK-Cuber.ttf);
 }
 
-.active {
-  border-bottom: 4px solid red;
-  border-color: aliceblue;
-}
-
 * {
   margin: 0;
   padding: 0;

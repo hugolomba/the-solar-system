@@ -47,7 +47,7 @@
 
 .planet h2 {
   font-size: 3rem;
-  /* color: rgb(92, 180, 247); */
+  color: var(--color);
 }
 
 .planet h3 {
@@ -62,4 +62,8 @@
   display: flex;
   margin-top: 3rem;
   justify-content: space-between;
+}
+
+.planet-type-span {
+  color: var(--color);
 }

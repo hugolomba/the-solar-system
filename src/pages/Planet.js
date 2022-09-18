@@ -36,16 +36,16 @@ const Planet = () => {
 
   return (
     <div className="planet-container">
-      <div className="seta earth">
-        <Link to={`/planeta/${back}`}>
-          <MdOutlineArrowBackIosNew className={`planet${planet.id}`} />
+      <div className="seta">
+        <Link className={`planet${planet.id}`} to={`/planeta/${back}`}>
+          <MdOutlineArrowBackIosNew />
         </Link>
       </div>
 
       {loading ? <Loading /> : <PlanetInfo planet={planet} />}
 
       <div className="seta earth">
-        <Link to={`/planeta/${foward}`}>
+        <Link className={`planet${planet.id}`} to={`/planeta/${foward}`}>
           <MdArrowForwardIos className={`planet${planet.id}`} />
         </Link>
       </div>
