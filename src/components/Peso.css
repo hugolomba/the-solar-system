@@ -5,8 +5,8 @@
   border: solid 10px rgb(255, 255, 255);
   background-color: var(--color);
   position: absolute;
-  right: 8rem;
-  top: 1rem;
+  right: 18rem;
+  top: 7rem;
   width: 45vw;
   height: 46vh;
   display: flex;
@@ -20,6 +20,19 @@
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
+}
+
+.peso-bg {
+  width: 85vw;
+  height: 71vh;
+  position: absolute;
+  top: -6rem;
+  /* border: 1px solid white; */
+  left: -1rem;
+
+  /* background: rgba(255, 255, 255, 0.1); */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .peso-container h2 {
