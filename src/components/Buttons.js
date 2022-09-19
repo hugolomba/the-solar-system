@@ -1,6 +1,7 @@
 import "./Buttons.css";
 import { useState } from "react";
 import Peso from "./Peso";
+import Age from "./Age";
 
 const findWord = (planetName) => {
   if (planetName === "Terra") {
@@ -53,6 +54,12 @@ const Buttons = ({ planet }) => {
 
       {planet.features && showWeight ? (
         <Peso clickHandler={clickHandler} planet={planet} />
+      ) : (
+        ""
+      )}
+
+      {planet.features && showAge ? (
+        <Age clickHandler={clickHandler} planet={planet} />
       ) : (
         ""
       )}

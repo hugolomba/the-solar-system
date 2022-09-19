@@ -80,6 +80,13 @@ const Peso = ({ planet, clickHandler }) => {
           O resultado aqui é 
         </p>
       </div> */}
+        <p>
+          <small>
+            Os valores apresentados aqui são feitos com cáculos simples e sem
+            supervisão ciêntífica, apenas para fins de entretenimento e
+            curiosidade.
+          </small>
+        </p>
       </div>
     </div>
   );
