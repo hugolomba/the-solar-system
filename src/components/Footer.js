@@ -1,7 +1,11 @@
 import "./Footer.css";
 
 const Footer = () => {
-  return <footer className="footer">Desevolvido por Gabriel e Hugo</footer>;
+  return (
+    <footer className="footer">
+      <>&copy; Copyright 2022</>
+    </footer>
+  );
 };
 
 export default Footer;
