@@ -7,6 +7,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import Loading from "../components/Loading";
 import PlanetInfo from "../components/PlanetInfo";
+import GalleryPage from "../components/GalleryPage";
 
 const Planet = () => {
   const [planet, setPlanet] = useState({});
@@ -40,6 +41,8 @@ const Planet = () => {
       </div>
 
       {loading ? <Loading /> : <PlanetInfo planet={planet} />}
+
+      {/* {planet && <GalleryPage planet={planet} />} */}
 
       <div className="seta earth">
         <Link className={`planet${planet.id}`} to={`/planeta/${foward}`}>

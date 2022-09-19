@@ -2,6 +2,7 @@ import "./Buttons.css";
 import { useState } from "react";
 import Peso from "./Peso";
 import Age from "./Age";
+import GalleryPage from "./GalleryPage";
 
 const findWord = (planetName) => {
   if (planetName === "Terra") {
@@ -21,7 +22,7 @@ const Buttons = ({ planet }) => {
   const clickHandler = (e) => {
     if (e.target.name === "weigthButton") setShowWeight(!showWeight);
     if (e.target.name === "ageButton") setShowAge(!showAge);
-    if (e.target.name === "garellyButton") setShowGallery(!showGallery);
+    if (e.target.name === "galleryButton") setShowGallery(!showGallery);
     if (!e.target.name) {
       setShowWeight(false);
       setShowAge(false);
@@ -60,6 +61,12 @@ const Buttons = ({ planet }) => {
 
       {planet.features && showAge ? (
         <Age clickHandler={clickHandler} planet={planet} />
+      ) : (
+        ""
+      )}
+
+      {planet.features && showGallery ? (
+        <GalleryPage clickHandler={clickHandler} planet={planet} />
       ) : (
         ""
       )}
