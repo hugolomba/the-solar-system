@@ -98,14 +98,15 @@ const GalleryPage = ({ planet, clickHandler }) => {
   const prevIndex = (index + images.length - 1) % images.length;
   const prevImage = images[prevIndex] || currentImage;
 
-  const handleClick = (index) => setIndex(index);
+  const handleClick = (index) => {
+    console.log(index);
+    setIndex(index);
+  };
   const handleClose = () => setIndex(-1);
   const handleMovePrev = () => setIndex(prevIndex);
   const handleMoveNext = () => setIndex(nextIndex);
 
   // novo
-
-  console.log(images);
 
   return (
     <div className="gallery-container-bg">
