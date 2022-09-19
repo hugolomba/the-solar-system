@@ -18,9 +18,12 @@ const PlanetInfo = ({ planet }) => {
                 <h2 className={`planet${planet.id}`}>{planet.name}</h2>
                 <h3>
                   <span className={`planet-type-span planet${planet.id}`}>
-                    TIPO:{" "}
+                    LUAS:{" "}
                   </span>
-                  {planet.type ? planet.type : "TIPO_PLANETA"}
+                  {planet.features.satellites.number ||
+                  planet.features.satellites.number >= 0
+                    ? planet.features.satellites.number
+                    : "???"}
                 </h3>
               </div>
               <p className="planet-resume">

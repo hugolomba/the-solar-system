@@ -1,6 +1,7 @@
 import "./Buttons.css";
 import { useState } from "react";
 import Peso from "./Peso";
+import Age from "./Age";
 
 const findWord = (planetName) => {
   if (planetName === "Terra") {
@@ -14,15 +15,25 @@ const findWord = (planetName) => {
 
 const Buttons = ({ planet }) => {
   const [showWeight, setShowWeight] = useState(false);
+  const [showAge, setShowAge] = useState(false);
+  const [showGallery, setShowGallery] = useState(false);
 
-  const clickHandler = () => {
-    setShowWeight(!showWeight);
+  const clickHandler = (e) => {
+    if (e.target.name === "weigthButton") setShowWeight(!showWeight);
+    if (e.target.name === "ageButton") setShowAge(!showAge);
+    if (e.target.name === "garellyButton") setShowGallery(!showGallery);
+    if (!e.target.name) {
+      setShowWeight(false);
+      setShowAge(false);
+      setShowGallery(false);
+    }
+    console.log(e.target.name);
   };
 
   return (
     <div className={`btn-container planet${planet.id}`}>
       {planet.name !== "Terra" ? (
-        <button className="btn" onClick={clickHandler}>
+        <button className="btn" name="weigthButton" onClick={clickHandler}>
           Quando você pesaria {findWord(planet.name)} {planet.name}?
         </button>
       ) : (
@@ -32,15 +43,23 @@ const Buttons = ({ planet }) => {
       {planet.name === "Terra" || planet.name === "Sol" ? (
         ""
       ) : (
-        <button className="btn">
+        <button className="btn" name="ageButton" onClick={clickHandler}>
           Qual seria sua idade {findWord(planet.name)} {planet.name}?
         </button>
       )}
 
-      <button className="btn">Galeria de imagens da NASA</button>
+      <button className="btn" name="galleryButton" onClick={clickHandler}>
+        Galeria de imagens da NASA
+      </button>
 
       {planet.features && showWeight ? (
         <Peso clickHandler={clickHandler} planet={planet} />
+      ) : (
+        ""
+      )}
+
+      {planet.features && showAge ? (
+        <Age clickHandler={clickHandler} planet={planet} />
       ) : (
         ""
       )}

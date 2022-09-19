@@ -37,7 +37,8 @@ const Peso = ({ planet, clickHandler }) => {
   return (
     <div className="peso-bg">
       <div className={`peso-container planet${planet.id}`}>
-        <AiFillCloseCircle onClick={clickHandler} />
+        <AiFillCloseCircle name="closeButton" onClick={clickHandler} />
+
         <h2 className={`planet${planet.id}`}>
           Qual seria o Seu peso {findWord(planet.name)} {planet.name}?
         </h2>
@@ -79,6 +80,13 @@ const Peso = ({ planet, clickHandler }) => {
           O resultado aqui é 
         </p>
       </div> */}
+        <p>
+          <small>
+            Os valores apresentados aqui são feitos com cáculos simples e sem
+            supervisão ciêntífica, apenas para fins de entretenimento e
+            curiosidade.
+          </small>
+        </p>
       </div>
     </div>
   );
