@@ -40,8 +40,8 @@ const InfoCards = ({ planet }) => {
       </div>
       {planet.name !== "Sol" ? (
         <div className="info-card">
-          <h4 className={`planet${planet.id}`}>LUAS</h4>
-          <h5>{showInfo(planet.features.satellites.number)}</h5>
+          <h4 className={`planet${planet.id}`}>TIPO</h4>
+          <h5>{showInfo(planet.type)}</h5>
         </div>
       ) : (
         ""
