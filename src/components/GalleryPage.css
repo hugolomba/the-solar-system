@@ -1,0 +1,87 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+.gallery-container-bg {
+  position: absolute;
+  width: 105%;
+  height: 70vh;
+  top: -2rem;
+  right: -3rem;
+  /* background-color: white; */
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.gallery-container {
+  width: 100%;
+  position: absolute;
+  width: 75%;
+  height: 60vh;
+  top: 1rem;
+  right: 11rem;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  border: solid 10px rgb(255, 255, 255);
+  background: black;
+}
+
+.gallery-container-bg svg {
+  font-size: 3rem;
+  position: absolute;
+  z-index: 10;
+  top: 1rem;
+  right: 8rem;
+}
+
+.image-card-container {
+  border: 1px solid white;
+}
+
+.image-card:active {
+  width: 50%;
+  height: 50%;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-card img:hover {
+  /* width: 100%;
+  height: 100%; */
+}
+
+.image-card p {
+  color: white;
+}
+
+.custom-overlay__caption {
+  color: white;
+  background: black;
+}
+
+.gallery-reference {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  top: 36rem;
+  right: 28rem;
+}
+
+.gallery-reference img {
+  width: 4rem;
+}
+
+.gallery-reference a {
+  color: white;
+}
+
+.ReactGridGallery_tile-description {
+  color: black;
+  text-align: center;
+}
