@@ -37,7 +37,8 @@ const Peso = ({ planet, clickHandler }) => {
   return (
     <div className="peso-bg">
       <div className={`peso-container planet${planet.id}`}>
-        <AiFillCloseCircle onClick={clickHandler} />
+        <AiFillCloseCircle name="closeButton" onClick={clickHandler} />
+
         <h2 className={`planet${planet.id}`}>
           Qual seria o Seu peso {findWord(planet.name)} {planet.name}?
         </h2>
