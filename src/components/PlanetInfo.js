@@ -1,30 +1,43 @@
 import "./PlanetInfo.css";
 import { Slide } from "react-awesome-reveal";
+import { useState } from "react";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
+import Loading from "./Loading";
+import LoaderTwo from "./LoaderTwo";
 
 const PlanetInfo = ({ planet }) => {
+  const [isLoading, setIsLoaging] = useState(true);
   return (
     <div>
       <Slide>
         <div className="planet">
           <div className="planet-image-container">
-            <img className="planet-image" src={planet.images.png} />
+            {isLoading && <Loading className="loader-two-container" />}
+            <img
+              className="planet-image"
+              src={planet.images.png}
+              onLoad={() => setIsLoaging(false)}
+            />
           </div>
 
           <div className="main">
             <div className="main-info">
               <div className="title">
                 <h2 className={`planet${planet.id}`}>{planet.name}</h2>
-                <h3>
-                  <span className={`planet-type-span planet${planet.id}`}>
-                    LUAS:{" "}
-                  </span>
-                  {planet.features.satellites.number ||
-                  planet.features.satellites.number >= 0
-                    ? planet.features.satellites.number
-                    : "???"}
-                </h3>
+                {planet.name === "Sol" ? (
+                  ""
+                ) : (
+                  <h3>
+                    <span className={`planet-type-span planet${planet.id}`}>
+                      LUAS:{" "}
+                    </span>
+                    {planet.features.satellites.number ||
+                    planet.features.satellites.number >= 0
+                      ? planet.features.satellites.number
+                      : "???"}
+                  </h3>
+                )}
               </div>
               <p className="planet-resume">
                 {planet.resume || planet.resume.length > 0

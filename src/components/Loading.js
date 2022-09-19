@@ -1,9 +1,9 @@
 import React from "react";
 import "../components/Loading.css";
 
-const Loading = () => {
+const Loading = ({ className }) => {
   return (
-    <div className="loader-container">
+    <div className={`loader-container ${className}`}>
       <div class="spinner">
         <span>L</span>
         <span>O</span>

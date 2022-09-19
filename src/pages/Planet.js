@@ -14,9 +14,6 @@ const Planet = () => {
 
   const planetId = useParams();
 
-  console.log("planetID", planetId);
-  console.log("planet", planet);
-
   useEffect(() => {
     setLoading(true);
     axios
