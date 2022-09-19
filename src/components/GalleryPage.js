@@ -62,11 +62,12 @@ const GalleryPage = ({ planet, clickHandler }) => {
         src: item.links[0].href,
         original: item.links[0].href,
         caption: item.data[0].title,
-        customOverlay: (
-          <div className="custom-overlay__caption">
-            <div>{item.data[0].title}</div>
-          </div>
-        ),
+        // customOverlay: (
+        //   <div className="custom-overlay__caption">
+        //     <div>{item.data[0].title}</div>
+        //   </div>
+        // ),
+        thumbnailCaption: item.data[0].title,
       });
     });
 
@@ -137,6 +138,7 @@ const GalleryPage = ({ planet, clickHandler }) => {
             <Lightbox
               mainSrc={currentImage.original}
               imageTitle={currentImage.caption}
+              imageCaption={currentImage.caption}
               mainSrcThumbnail={currentImage.src}
               nextSrc={nextImage.original}
               nextSrcThumbnail={nextImage.src}

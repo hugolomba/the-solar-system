@@ -80,3 +80,8 @@
 .gallery-reference a {
   color: white;
 }
+
+.ReactGridGallery_tile-description {
+  color: black;
+  text-align: center;
+}
