@@ -43,14 +43,22 @@
     align-items: center;
     position: absolute;
     z-index: 10000;
-    background-color: black;
-    /* width: 142vw; */
-    /* height: 143vh; */
-    right: -12rem;
+    /* background-color: black; */
     top: 0rem;
-    padding: 5rem;
     font-size: 2rem;
-    display: none;
+    width: 100%;
+    height: 200vh;
+    margin: 0;
+    padding-top: 4rem;
+
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+  }
+
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .navbar li {
@@ -84,6 +92,7 @@
 
   .visible {
     display: flex;
+    opacity: 1;
   }
 
   .planet {
@@ -102,5 +111,9 @@
 
   .info-cards-container {
     flex-direction: column;
+  }
+
+  .active {
+    border-bottom-width: 10px;
   }
 }

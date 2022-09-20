@@ -52,4 +52,5 @@
 
 .visible {
   display: flex;
+  opacity: 1;
 }
