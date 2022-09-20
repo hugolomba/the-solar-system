@@ -42,7 +42,7 @@
     flex-direction: column;
     align-items: center;
     position: absolute;
-    z-index: 10000;
+    z-index: 100;
     /* background-color: black; */
     top: 0rem;
     font-size: 2rem;
@@ -129,8 +129,52 @@
   .peso-container,
   .idade-container {
     right: 6vw;
-    top: 20vh;
+    top: 10vh;
     width: 87vw;
-    height: 46vh;
+    height: 70vh;
+  }
+
+  .peso-container h2,
+  .idade-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .convert-container {
+    gap: 1rem;
+  }
+
+  .convert-container label {
+    font-size: 1.2rem;
+  }
+
+  .convert-result p {
+    font-size: 1.2rem;
+  }
+
+  .gallery-container-bg {
+    width: 100vw;
+    height: 100vh;
+    top: 0rem;
+    right: 0;
+    z-index: 100;
+  }
+
+  .gallery-container-bg svg {
+    top: 2rem;
+    right: 0rem;
+    stroke: black;
+    stroke-width: 80px;
+  }
+
+  .gallery-container {
+    width: 96%;
+    height: 78vh;
+    top: 6vh;
+    right: 2vw;
+  }
+
+  .gallery-reference {
+    top: 13rem;
+    right: -0.5rem;
   }
 }
