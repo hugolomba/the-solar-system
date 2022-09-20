@@ -8,7 +8,7 @@ The solar system foi inspirado na nossa paixão pelo universo e por tudo qui ain
 
 ### Prerequisites do Projeto
 
-The things you need before installing the software.
+
 
 * You need this
 * And you need this
