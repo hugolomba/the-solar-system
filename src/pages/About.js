@@ -7,7 +7,11 @@ const About = () => {
     return (
         <div className="about">
             <h2> The solar system</h2>
-            <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+            <p>
+                The solar system foi inspirado na nossa paixão pelo universo e por tudo que ainda temos a explorar. Nosso objetivo é trazer informações confiáveis de forma criativa e divertida. Gostaríamos de passar para cada um de vocês uma breve experiência navegando pelos planetas do nosso sistema solar. Desejamos a todos “uma vida longa e prospera”!
+            </p>
+            <h2> Technologies</h2>
+            <p>Utilizamos principalmente o react e duas APIs sendo uma delas da própria NASA.</p>
 
             <h2>Desenvolvedores</h2>
             <div className="dev-container">
