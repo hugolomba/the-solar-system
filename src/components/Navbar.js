@@ -6,7 +6,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { useState } from "react";
 
 const Navbar = ({ planets }) => {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(true);
 
   const handleMenu = () => setMenuIsOpen(!menuIsOpen);
 
@@ -15,7 +15,7 @@ const Navbar = ({ planets }) => {
       <Link to="/">
         <h1>The Solar System</h1>
       </Link>
-      <ul className={menuIsOpen ? `` : `nav-invisible`}>
+      <ul className={menuIsOpen ? `visible` : ``}>
         {planets.length > 0 &&
           planets.map((planeta) => {
             return (
@@ -28,7 +28,6 @@ const Navbar = ({ planets }) => {
                   {planeta.name === "Plutão"
                     ? ` ${planeta.name}?`
                     : planeta.name.toUpperCase()}
-                  {/* {planeta.name.toUpperCase()} */}
                 </NavLink>
               </li>
             );

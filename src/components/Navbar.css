@@ -7,7 +7,6 @@
   font-weight: 600;
   justify-content: space-between;
   align-items: center;
-
   margin-top: 1rem;
 }
 
@@ -43,14 +42,14 @@
   position: absolute;
   z-index: 10000000;
   top: 2rem;
-  right: -8rem;
-  font-size: 2rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .close-menu-btn {
 }
 
-.nav-invisible {
-  opacity: 0;
-  pointer-events: none;
+.visible {
+  display: flex;
 }

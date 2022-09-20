@@ -29,19 +29,28 @@
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 530px) {
+  .visible {
+    display: flex;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
   .navbar ul {
     flex-direction: column;
     align-items: center;
     position: absolute;
     z-index: 10000;
-    background-color: rgb(250, 140, 140);
-    width: 142vw;
-    height: 143vh;
+    background-color: black;
+    /* width: 142vw; */
+    /* height: 143vh; */
     right: -12rem;
     top: 0rem;
     padding: 5rem;
     font-size: 2rem;
+    display: none;
   }
 
   .navbar li {
@@ -49,7 +58,7 @@
   }
 
   .navbar h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .close-menu-btn,
@@ -62,11 +71,36 @@
   }
 
   .planet-container {
-    width: 140%;
+    /* width: 140%; */
     margin-top: 3rem;
   }
 
   .footer {
-    margin-right: 3.5rem;
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  .planet {
+    margin: 2rem;
+    gap: 3rem;
+  }
+
+  .planet-image {
+    width: 15rem;
+  }
+
+  .title h2,
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .info-cards-container {
+    flex-direction: column;
   }
 }
