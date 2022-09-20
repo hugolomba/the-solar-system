@@ -28,7 +28,7 @@ const Buttons = ({ planet }) => {
       setShowAge(false);
       setShowGallery(false);
     }
-    console.log(e.target.name);
+    window.scrollTo(0, 0);
   };
 
   return (
