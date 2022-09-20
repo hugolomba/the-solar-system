@@ -1,6 +1,3 @@
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-thumbnail.css";
 import "./GalleryPage.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -111,6 +108,7 @@ const GalleryPage = ({ planet, clickHandler }) => {
   return (
     <div className="gallery-container-bg">
       <AiFillCloseCircle onClick={clickHandler} />
+
       <div className="gallery-reference">
         <span>
           Provide by{" "}
@@ -120,6 +118,7 @@ const GalleryPage = ({ planet, clickHandler }) => {
         </span>
         <img src={nasaLogo} alt="nasa-logo" />
       </div>
+
       {isLoading ? (
         <Loading />
       ) : (
@@ -148,6 +147,9 @@ const GalleryPage = ({ planet, clickHandler }) => {
               onCloseRequest={handleClose}
               onMovePrevRequest={handleMovePrev}
               onMoveNextRequest={handleMoveNext}
+              onImageLoad={() => {
+                window.dispatchEvent(new Event("resize"));
+              }}
             />
           )}
         </div>

@@ -64,13 +64,17 @@
 }
 
 .gallery-reference {
-  position: absolute;
-  z-index: 100;
+  position: relative;
+  z-index: 1000;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  top: 36rem;
-  right: 28rem;
+  top: 2rem;
+  right: 2rem;
+  height: 120vh;
+  /* width: 100%; */
+  justify-content: center;
+  pointer-events: none;
 }
 
 .gallery-reference img {
