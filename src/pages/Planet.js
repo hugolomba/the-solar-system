@@ -34,7 +34,7 @@ const Planet = () => {
 
   return (
     <div className="planet-container">
-      <div className="seta">
+      <div className="seta-left">
         <Link className={`planet${planet.id}`} to={`/planeta/${back}`}>
           <MdOutlineArrowBackIosNew />
         </Link>
@@ -44,7 +44,7 @@ const Planet = () => {
 
       {/* {planet && <GalleryPage planet={planet} />} */}
 
-      <div className="seta earth">
+      <div className="seta-right">
         <Link className={`planet${planet.id}`} to={`/planeta/${foward}`}>
           <MdArrowForwardIos className={`planet${planet.id}`} />
         </Link>
