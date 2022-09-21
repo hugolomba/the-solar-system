@@ -29,10 +29,61 @@
     width: 100%;
 }
 
-.venus{
+.sun{
+    width: 100px;
+    height: 100px;
+}
+
+.mercury{
     width: 30px;
     height: 30px;
 }
+
+.venus{
+    width: 70px;
+    height: 70px;
+}
+
+.earth{
+    width: 73px;
+    height: 73px;
+}
+
+.mars{
+    width: 40px;
+    height: 40px;
+}
+
+.jupiter{
+    width: 82px;
+    height: 82px;
+}
+
+.saturn{
+    width: 69px;
+    height: 69px;
+}
+
+.uranus{
+    width: 29px;
+    height: 29px;
+}
+
+.neptune{
+    width: 27px;
+    height: 27px;
+}
+
+.pluto{
+    width: 13px;
+    height: 13px;
+}
+
+
+
+
+
+
 
 .planeta{
     max-width: 80px;
