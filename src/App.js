@@ -32,7 +32,7 @@ function App() {
       {/* <Loading /> */}
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About />} />
         <Route path="/planeta/:planeta" element={<Planet />} />
         <Route path="*" element={<ErrorPage />} />
