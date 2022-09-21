@@ -1,0 +1,180 @@
+@media (max-width: 1280px) {
+  .planet-image {
+    width: 23em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .planet {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media (max-width: 820px) {
+  .planet-image {
+    width: 25rem;
+  }
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 820px) {
+  .planet-image {
+    width: 20rem;
+  }
+  .navbar ul {
+    gap: 0.8rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .visible {
+    display: flex;
+  }
+
+  .navbar {
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    /* background-color: black; */
+    top: 0rem;
+    font-size: 2rem;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-top: 4rem;
+
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+  }
+
+  .invisible {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navbar li {
+    padding: 1rem 5rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.3rem;
+  }
+
+  .close-menu-btn,
+  .open-menu-btn {
+    display: block;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .planet-container {
+    /* width: 140%; */
+    margin-top: 3rem;
+  }
+
+  .footer {
+  }
+
+  .seta {
+    display: none;
+  }
+
+  .visible {
+    display: flex;
+    opacity: 1;
+  }
+
+  .planet {
+    margin: 2rem;
+    gap: 3rem;
+  }
+
+  .planet-image {
+    width: 15rem;
+  }
+
+  .title h2,
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  .info-cards-container {
+    flex-direction: column;
+  }
+
+  .active {
+    border-bottom-width: 10px;
+  }
+
+  .peso-bg,
+  .idade-bg {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+
+    left: 0rem;
+  }
+
+  .peso-container,
+  .idade-container {
+    right: 6vw;
+    top: 10vh;
+    width: 87vw;
+    height: 70vh;
+  }
+
+  .peso-container h2,
+  .idade-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .convert-container {
+    gap: 1rem;
+  }
+
+  .convert-container label {
+    font-size: 1.2rem;
+  }
+
+  .convert-result p {
+    font-size: 1.2rem;
+  }
+
+  .gallery-container-bg {
+    width: 100vw;
+    height: 100vh;
+    top: 0rem;
+    right: 0;
+    z-index: 100;
+  }
+
+  .gallery-container-bg svg {
+    top: 2rem;
+    right: 0rem;
+    stroke: black;
+    stroke-width: 80px;
+  }
+
+  .gallery-container {
+    width: 96%;
+    height: 78vh;
+    top: 6vh;
+    right: 2vw;
+  }
+
+  .gallery-reference {
+    top: 13rem;
+    right: -0.5rem;
+  }
+}

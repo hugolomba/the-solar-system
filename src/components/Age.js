@@ -43,10 +43,10 @@ const Age = ({ planet, clickHandler }) => {
         <AiFillCloseCircle name="closeButton" onClick={clickHandler} />
 
         <h2 className={`planet${planet.id}`}>
-          Qual seria a sua idadee {findWord(planet.name)} {planet.name}?
+          Qual seria a sua idade {findWord(planet.name)} {planet.name}?
         </h2>
         <div className="convert-container">
-          <label for="idade-terra">Insira sua idadee na Terra</label>
+          <label for="idade-terra">Insira sua idade na Terra</label>
           <input
             type="number"
             id="idade-terra"

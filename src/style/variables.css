@@ -35,9 +35,9 @@
 }
 
 .planet6 {
-  --color: #ffdea0;
-  --border-color: #ffdea0;
-  --background: rgba(255, 222, 160);
+  --color: rgb(212, 179, 114);
+  --border-color: rgb(212, 179, 114);
+  --background: rgb(212, 179, 114);
 }
 
 .planet7 {

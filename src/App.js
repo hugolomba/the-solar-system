@@ -10,6 +10,8 @@ import About from "./pages/About";
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
+import "./style/mediaQuery.css";
+
 function App() {
   // const [planet, setPlanet] = useState({});
   const [planets, setPlanets] = useState({});
