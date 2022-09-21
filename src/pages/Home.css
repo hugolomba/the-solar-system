@@ -1,0 +1,90 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.home-container h2 {
+    color: white;
+    width: 70%;
+
+}
+
+.imagens-container img {
+    width: 5rem;
+}
+
+.imagens-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    align-items: center;
+  flex-wrap: wrap;
+}
+
+.planeta img {
+    height: 100%;
+    width: 100%;
+}
+
+.sun{
+    width: 100px;
+    height: 100px;
+}
+
+.mercury{
+    width: 30px;
+    height: 30px;
+}
+
+.venus{
+    width: 70px;
+    height: 70px;
+}
+
+.earth{
+    width: 73px;
+    height: 73px;
+}
+
+.mars{
+    width: 40px;
+    height: 40px;
+}
+
+.jupiter{
+    width: 82px;
+    height: 82px;
+}
+
+.saturn{
+    width: 69px;
+    height: 69px;
+}
+
+.uranus{
+    width: 29px;
+    height: 29px;
+}
+
+.neptune{
+    width: 27px;
+    height: 27px;
+}
+
+.pluto{
+    width: 13px;
+    height: 13px;
+}
+
+
+
+
+
+
+
+.planeta{
+    max-width: 80px;
+}
