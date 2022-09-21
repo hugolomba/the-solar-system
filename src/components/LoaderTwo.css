@@ -1,6 +1,7 @@
 .loader-two-container {
+  width: 100%;
   position: absolute;
-  z-index: 1;
-  right: 21rem;
-  top: 13rem;
+  z-index: 1000000000;
+  right: 7rem;
+  top: 7rem;
 }

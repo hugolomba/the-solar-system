@@ -110,10 +110,16 @@
   .planet {
     margin: 2rem;
     gap: 3rem;
+    align-items: center;
   }
 
   .planet-image {
+    width: 100%;
+  }
+
+  .planet-image-container {
     width: 15rem;
+    height: 15rem;
   }
 
   .title h2,

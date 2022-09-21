@@ -1,24 +1,18 @@
 import "./PlanetInfo.css";
-import { Slide } from "react-awesome-reveal";
-import { useState } from "react";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
-import Loading from "./Loading";
-import LoaderTwo from "./LoaderTwo";
+
+import { Suspense } from "react";
 
 const PlanetInfo = ({ planet }) => {
-  const [isLoading, setIsLoaging] = useState(true);
   return (
     <div>
       {/* <Slide> */}
       <div className="planet">
         <div className="planet-image-container">
-          {isLoading && <Loading className="loader-two-container" />}
-          <img
-            className="planet-image"
-            src={planet.images.png}
-            onLoad={() => setIsLoaging(false)}
-          />
+          <Suspense>
+            <img className="planet-image" src={planet.images.png} />
+          </Suspense>
         </div>
 
         <div className="main">
