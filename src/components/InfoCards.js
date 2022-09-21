@@ -11,7 +11,7 @@ const InfoCards = ({ planet }) => {
     <div className="info-cards-container">
       {planet.name !== "Sol" ? (
         <div className="info-card">
-          <h4 className={`planet${planet.id}`}>DISTÂNCIA DO SOL</h4>
+          <h4 className={`planet${planet.id}`}>DIST.DO SOL</h4>
           <h5>{showInfo(planet.features.sunDistance)}</h5>
         </div>
       ) : (
@@ -19,7 +19,7 @@ const InfoCards = ({ planet }) => {
       )}
       {planet.name !== "Sol" ? (
         <div className="info-card">
-          <h4 className={`planet${planet.id}`}>DURAÇÃO DE UM ANO</h4>
+          <h4 className={`planet${planet.id}`}>DUR. DE UM ANO</h4>
           <h5>{showInfo(planet.features.orbitalPeriod[0])}</h5>
         </div>
       ) : (
@@ -27,7 +27,7 @@ const InfoCards = ({ planet }) => {
       )}
 
       <div className="info-card">
-        <h4 className={`planet${planet.id}`}>DURAÇÃO DE UM DIA</h4>
+        <h4 className={`planet${planet.id}`}>DUR. DE UM DIA</h4>
         <h5>{showInfo(planet.features.rotationDuration)}</h5>
       </div>
       <div className="info-card">
@@ -48,7 +48,7 @@ const InfoCards = ({ planet }) => {
       )}
       {planet.name !== "Sol" ? (
         <div className="info-card">
-          <h4 className={`planet${planet.id}`}>A LUZ DOS SOL CHEGA EM:</h4>
+          <h4 className={`planet${planet.id}`}>TEMPO VIAGEM DA LUZ</h4>
           <h5>{showInfo(planet.features.oneWayLightToTheSun)}</h5>
         </div>
       ) : (
