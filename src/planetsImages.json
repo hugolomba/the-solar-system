@@ -1,51 +1,61 @@
 [
   {
+    "id": "0",
     "planet": "sun",
-    "image": "../img/planets/sun.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/sun.png"
   },
 
   {
+    "id": "1",
     "planet": "mercury",
-    "image": "../img/planets/mercury.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/mercury.png"
   },
 
   {
+    "id": "2",
     "planet": "venus",
-    "image": "./img/planets/venus.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/venus.png"
   },
 
   {
+    "id": "3",
     "planet": "earth",
-    "image": "./img/planets/earth.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/earth.png"
   },
 
   {
+    "id": "4",
     "planet": "mars",
-    "image": "./img/planets/mars.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/mars.png"
   },
 
   {
+    "id": "5",
     "planet": "jupiter",
-    "image": "./img/planets/jupiter.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/jupiter.png"
   },
 
   {
+    "id": "6",
     "planet": "saturn",
-    "image": "./img/planets/saturn.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/saturn.png"
   },
 
   {
+    "id": "7",
     "planet": "uranus",
-    "image": "./img/planets/uranus.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/uranus.png"
   },
 
   {
+    "id": "8",
     "planet": "neptune",
-    "image": "./img/planets/neptune.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/neptune.png"
   },
 
   {
+    "id": "9",
     "planet": "pluto",
-    "image": "./img/planets/pluto.png"
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/pluto.png"
   }
 ]

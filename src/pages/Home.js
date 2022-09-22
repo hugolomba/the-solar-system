@@ -3,6 +3,8 @@ import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+import planetsImages from "../planetsImages.json";
+
 const Home = (props) => {
   const [planets, setPlanets] = useState([]);
 
@@ -51,12 +53,28 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <h2>
-        Bom vindo ao The Solar System, aqui você vai encontrar informações, curiosidades e entretenimento sobre o nosso sistema solar. <br/>Esperamos que tenha uma maravilhosa navegação.
+        Bom vindo ao The Solar System, aqui você vai encontrar informações,
+        curiosidades e entretenimento sobre o nosso sistema solar. <br />
+        Esperamos que tenha uma maravilhosa navegação.
       </h2>
       <div className="imagens-container">
-        {planets && planets.map((planet)=>{
-           return <div className={`${translateName(planet.name)} planeta`}><img src={planet.images.png}/> </div>
-        })}
+        {/* {planets &&
+          planets.map((planet) => {
+            return (
+              <div className={`${translateName(planet.name)} planeta`}>
+                <img src={planet.images.png} />{" "}
+              </div>
+            );
+          })} */}
+
+        {planets &&
+          planetsImages.map((planet) => {
+            return (
+              <div className={`${planet.planet} planeta`}>
+                <img src={planet.image} />{" "}
+              </div>
+            );
+          })}
       </div>
     </div>
   );

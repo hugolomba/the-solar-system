@@ -80,15 +80,17 @@ const PlanetInfo = ({ planet }) => {
               onError={(e) => (e.currentTarget.src = errorImg)}
             /> */}
 
-          {planetsImages.map((planet) => {
-            return (
-              <img
-                className="planet-image"
-                src={require(planet.image)}
-                alt="planet image"
-                onError={(e) => (e.currentTarget.src = errorImg)}
-              />
-            );
+          {planetsImages.map((p) => {
+            if (planet.id === p.id) {
+              return (
+                <img
+                  className="planet-image"
+                  src={p.image}
+                  alt="planet image"
+                  onError={(e) => (e.currentTarget.src = errorImg)}
+                />
+              );
+            }
           })}
           {/* </Suspense> */}
         </div>
