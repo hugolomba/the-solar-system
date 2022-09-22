@@ -27,6 +27,11 @@
   .navbar ul {
     gap: 0.8rem;
   }
+
+  .home-container p {
+    font-size: 2rem;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 530px) {
@@ -192,5 +197,21 @@
   .gallery-reference {
     top: 13rem;
     right: -0.5rem;
+  }
+
+  .home-container p {
+    font-size: 1.5rem;
+  }
+
+  .imagens-container {
+    /* flex-direction: column; */
+    gap: 1rem;
+    width: 100vw;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+  }
+
+  .planet img {
+    object-fit: fill;
   }
 }

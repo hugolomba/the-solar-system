@@ -52,11 +52,11 @@ const Home = (props) => {
   };
   return (
     <div className="home-container">
-      <h2>
-        Bom vindo ao The Solar System, aqui você vai encontrar informações,
-        curiosidades e entretenimento sobre o nosso sistema solar. <br />
+      <p>
+        Bom vindo ao The Solar System, aqui você encontra informações e
+        curiosidades sobre o nosso sistema solar. <br />
         Esperamos que tenha uma maravilhosa navegação.
-      </h2>
+      </p>
       <div className="imagens-container">
         {/* {planets &&
           planets.map((planet) => {
