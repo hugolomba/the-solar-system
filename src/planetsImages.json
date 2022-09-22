@@ -1,0 +1,51 @@
+[
+  {
+    "planet": "sun",
+    "image": "../img/planets/sun.png"
+  },
+
+  {
+    "planet": "mercury",
+    "image": "../img/planets/mercury.png"
+  },
+
+  {
+    "planet": "venus",
+    "image": "./img/planets/venus.png"
+  },
+
+  {
+    "planet": "earth",
+    "image": "./img/planets/earth.png"
+  },
+
+  {
+    "planet": "mars",
+    "image": "./img/planets/mars.png"
+  },
+
+  {
+    "planet": "jupiter",
+    "image": "./img/planets/jupiter.png"
+  },
+
+  {
+    "planet": "saturn",
+    "image": "./img/planets/saturn.png"
+  },
+
+  {
+    "planet": "uranus",
+    "image": "./img/planets/uranus.png"
+  },
+
+  {
+    "planet": "neptune",
+    "image": "./img/planets/neptune.png"
+  },
+
+  {
+    "planet": "pluto",
+    "image": "./img/planets/pluto.png"
+  }
+]

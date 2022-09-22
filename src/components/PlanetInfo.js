@@ -1,18 +1,96 @@
 import "./PlanetInfo.css";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
+import errorImg from "../img/error-img.gif";
+import teste from "../img/planets/pluto.png";
+
+import planetsImages from "../planetsImages.json";
+
+// planetsImages.map((planet) => {
+//   return {import planet.name }
+// })
 
 import { Suspense } from "react";
 
+// const planetsImages = [
+//   {
+//     planet: "sun",
+//     image: "../img/planets/sun.png",
+//   },
+
+//   {
+//     planet: "mercury",
+//     image: "../img/planets/mercury.png",
+//   },
+
+//   {
+//     planet: "venus",
+//     image: "./img/planets/venus.png",
+//   },
+
+//   {
+//     planet: "earth",
+//     image: "./img/planets/earth.png",
+//   },
+
+//   {
+//     planet: "mars",
+//     image: "./img/planets/mars.png",
+//   },
+
+//   {
+//     planet: "jupiter",
+//     image: "./img/planets/jupiter.png",
+//   },
+
+//   {
+//     planet: "saturn",
+//     image: "./img/planets/saturn.png",
+//   },
+
+//   {
+//     planet: "uranus",
+//     image: "./img/planets/uranus.png",
+//   },
+
+//   {
+//     planet: "neptune",
+//     image: "./img/planets/neptune.png",
+//   },
+
+//   {
+//     planet: "pluto",
+//     image: "./img/planets/pluto.png",
+//   },
+// ];
+
 const PlanetInfo = ({ planet }) => {
+  const image = "../img/planets/pluto.png";
+
   return (
     <div>
       {/* <Slide> */}
       <div className="planet">
         <div className="planet-image-container">
-          <Suspense>
-            <img className="planet-image" src={planet.images.png} />
-          </Suspense>
+          {/* <Suspense> */}
+          {/* <img
+              className="planet-image"
+              src={planet.images.png}
+              alt="planet image"
+              onError={(e) => (e.currentTarget.src = errorImg)}
+            /> */}
+
+          {planetsImages.map((planet) => {
+            return (
+              <img
+                className="planet-image"
+                src={require(planet.image)}
+                alt="planet image"
+                onError={(e) => (e.currentTarget.src = errorImg)}
+              />
+            );
+          })}
+          {/* </Suspense> */}
         </div>
 
         <div className="main">
