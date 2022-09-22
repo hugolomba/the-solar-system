@@ -83,11 +83,20 @@
     margin-top: 3rem;
   }
 
-  .footer {
+  .seta-right,
+  .seta-left {
+    /* display: none; */
+    position: absolute;
+    top: 15rem;
+    font-size: 3rem;
   }
 
-  .seta {
-    display: none;
+  .seta-right {
+    right: 0;
+  }
+
+  .seta-left {
+    left: 0;
   }
 
   .visible {
@@ -98,10 +107,16 @@
   .planet {
     margin: 2rem;
     gap: 3rem;
+    align-items: center;
   }
 
   .planet-image {
+    width: 100%;
+  }
+
+  .planet-image-container {
     width: 15rem;
+    height: 15rem;
   }
 
   .title h2,
@@ -124,6 +139,7 @@
     top: 0;
 
     left: 0rem;
+    z-index: 100;
   }
 
   .peso-container,

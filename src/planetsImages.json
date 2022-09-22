@@ -1,0 +1,61 @@
+[
+  {
+    "id": "0",
+    "planet": "sun",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/sun.png"
+  },
+
+  {
+    "id": "1",
+    "planet": "mercury",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/mercury.png"
+  },
+
+  {
+    "id": "2",
+    "planet": "venus",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/venus.png"
+  },
+
+  {
+    "id": "3",
+    "planet": "earth",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/earth.png"
+  },
+
+  {
+    "id": "4",
+    "planet": "mars",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/mars.png"
+  },
+
+  {
+    "id": "5",
+    "planet": "jupiter",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/jupiter.png"
+  },
+
+  {
+    "id": "6",
+    "planet": "saturn",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/saturn.png"
+  },
+
+  {
+    "id": "7",
+    "planet": "uranus",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/uranus.png"
+  },
+
+  {
+    "id": "8",
+    "planet": "neptune",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/neptune.png"
+  },
+
+  {
+    "id": "9",
+    "planet": "pluto",
+    "image": "https://raw.githubusercontent.com/hugolomba/the-solar-system/master/src/img/planets/pluto.png"
+  }
+]

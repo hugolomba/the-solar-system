@@ -1,24 +1,98 @@
 import "./PlanetInfo.css";
-import { Slide } from "react-awesome-reveal";
-import { useState } from "react";
 import Buttons from "./Buttons";
 import InfoCards from "./InfoCards";
-import Loading from "./Loading";
-import LoaderTwo from "./LoaderTwo";
+import errorImg from "../img/error-img.gif";
+import teste from "../img/planets/pluto.png";
+
+import planetsImages from "../planetsImages.json";
+
+// planetsImages.map((planet) => {
+//   return {import planet.name }
+// })
+
+import { Suspense } from "react";
+
+// const planetsImages = [
+//   {
+//     planet: "sun",
+//     image: "../img/planets/sun.png",
+//   },
+
+//   {
+//     planet: "mercury",
+//     image: "../img/planets/mercury.png",
+//   },
+
+//   {
+//     planet: "venus",
+//     image: "./img/planets/venus.png",
+//   },
+
+//   {
+//     planet: "earth",
+//     image: "./img/planets/earth.png",
+//   },
+
+//   {
+//     planet: "mars",
+//     image: "./img/planets/mars.png",
+//   },
+
+//   {
+//     planet: "jupiter",
+//     image: "./img/planets/jupiter.png",
+//   },
+
+//   {
+//     planet: "saturn",
+//     image: "./img/planets/saturn.png",
+//   },
+
+//   {
+//     planet: "uranus",
+//     image: "./img/planets/uranus.png",
+//   },
+
+//   {
+//     planet: "neptune",
+//     image: "./img/planets/neptune.png",
+//   },
+
+//   {
+//     planet: "pluto",
+//     image: "./img/planets/pluto.png",
+//   },
+// ];
 
 const PlanetInfo = ({ planet }) => {
-  const [isLoading, setIsLoaging] = useState(true);
+  const image = "../img/planets/pluto.png";
+
   return (
     <div>
       {/* <Slide> */}
       <div className="planet">
         <div className="planet-image-container">
-          {isLoading && <Loading className="loader-two-container" />}
-          <img
-            className="planet-image"
-            src={planet.images.png}
-            onLoad={() => setIsLoaging(false)}
-          />
+          {/* <Suspense> */}
+          {/* <img
+              className="planet-image"
+              src={planet.images.png}
+              alt="planet image"
+              onError={(e) => (e.currentTarget.src = errorImg)}
+            /> */}
+
+          {planetsImages.map((p) => {
+            if (planet.id === p.id) {
+              return (
+                <img
+                  className="planet-image"
+                  src={p.image}
+                  alt="planet image"
+                  onError={(e) => (e.currentTarget.src = errorImg)}
+                />
+              );
+            }
+          })}
+          {/* </Suspense> */}
         </div>
 
         <div className="main">

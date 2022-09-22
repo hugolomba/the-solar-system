@@ -6,13 +6,21 @@
   gap: 3rem;
 }
 
-.seta {
+.seta-right {
   order: 0;
   flex: 0 1 auto;
   font-size: 5rem;
   align-self: auto;
 }
 
-.seta a {
+.seta-left {
+  order: 0;
+  flex: 0 1 auto;
+  font-size: 5rem;
+  align-self: auto;
+}
+
+.seta-right a,
+.seta-left a {
   color: var(--color);
 }
