@@ -4,13 +4,12 @@
 
 ## Descrição
 
-The solar system foi inspirado na nossa paixão pelo universo e por tudo qui ainda temos a explorar. Nosso objetivo é trazer informações confiáveis de forma criativa e divertida. Gostaríamos de passar para cada um de vocês uma breve experiência navegando pelos planetas do nosso sistema solar. Desejamos a todos “uma vida longa e prospera”!
+The solar system foi inspirado na nossa paixão pelo universo e por tudo que ainda temos a explorar. Nosso objetivo é trazer informações de forma criativa e divertida. Gostaríamos de passar para cada um de vocês uma breve experiência navegando pelos planetas do nosso sistema solar. Desejamos a todos “uma vida longa e prospera”!
 
 ### Tecnologias
 
 - React
 - API da NASA
-- CSS
 
 ### Requisitos do Projeto IronHack
 
