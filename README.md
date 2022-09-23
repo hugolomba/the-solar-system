@@ -9,12 +9,20 @@ The solar system foi inspirado na nossa paixão pelo universo e por tudo que ain
 ### Tecnologias
 
 - React
-- API da NASA
+- [NASA Image and Video Library](https://api.nasa.gov/)
+- [API Solar System](https://github.com/leovargasdev/api-solar-system)
+
+### Funcionalidades
+
+- Informações sobre cada planeta do sistema solar, incluindo Plutão e o Sol.
+- Interações para calcular peso e idade em cada planeta (com base nos valores de Gravidade e Período Orbital de cada planeta), com base nas informações recebidas da [API Solar System](https://github.com/leovargasdev/api-solar-system)
+- Galeria de Imagens criada dinâmicamente através da API [NASA Image and Video Library](https://api.nasa.gov/)
+- Adaptado para vários tamanhos de tela
 
 ### Requisitos do Projeto IronHack
 
 - Tenha um frontend SPA , construído com React , composto por múltiplas visualizações e implementando todas as ações CRUD.
-- Comunique-se com um back- end de API REST construído com que executa ações CRUD (GET, POST, PUT, DELETE) .
+- Comunique-se com uma API REST.
 - Tenha 3 rotas ou mais .
 - Tenha um repositório no GitHub .
 - Tenha pelo menos 2 commits por dia em que você trabalhou.
