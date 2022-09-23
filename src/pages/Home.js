@@ -1,7 +1,9 @@
 import "../style/app.css";
-import "./Home.css";
+// import "./Home.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
+
+import Dock from "../components/Dock";
 
 import planetsImages from "../planetsImages.json";
 
@@ -68,7 +70,7 @@ const Home = (props) => {
               </div>
             );
           })} */}
-
+        {/* 
         {planets &&
           planetsImages.map((planet) => {
             return (
@@ -78,7 +80,9 @@ const Home = (props) => {
                 </div>
               </Link>
             );
-          })}
+          })} */}
+
+        <Dock />
       </div>
     </div>
   );

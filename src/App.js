@@ -11,6 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 
 import "./style/mediaQuery.css";
+import Dock from "./components/Dock";
 
 function App() {
   // const [planet, setPlanet] = useState({});
@@ -32,7 +33,7 @@ function App() {
       {/* <Loading /> */}
 
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/planeta/:planeta" element={<Planet />} />
         <Route path="*" element={<ErrorPage />} />
