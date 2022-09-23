@@ -17,10 +17,12 @@
 }
 
 .idade-container svg {
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  right: -1.2rem;
+  top: -1.5rem;
+  stroke: black;
+  stroke-width: 80px;
 }
 
 .idade-bg {
