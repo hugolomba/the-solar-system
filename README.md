@@ -1,7 +1,6 @@
-
 # The Solar System
 
-![Logo](https://s4.aconvert.com/convert/p3r68-cdx67/am289-pcc9k.jpg)
+![Logo](./src/img/print.gif)
 
 ## Descrição
 
@@ -9,16 +8,15 @@ The solar system foi inspirado na nossa paixão pelo universo e por tudo qui ain
 
 ### Tecnologias
 
-* React
-* API da NASA
-* CSS
+- React
+- API da NASA
+- CSS
 
 ### Requisitos do Projeto IronHack
 
-* Tenha um frontend SPA , construído com React , composto por múltiplas visualizações e implementando todas as ações CRUD.
-* Comunique-se com um back- end de API REST construído com que executa ações CRUD (GET, POST, PUT, DELETE) .
-* Tenha 3 rotas ou mais .
-* Tenha um  repositório no GitHub .
-* Tenha pelo menos 2 commits por dia em que você trabalhou.
-* Seja implantado online , permitindo que qualquer pessoa acesse e use seu aplicativo
-
+- Tenha um frontend SPA , construído com React , composto por múltiplas visualizações e implementando todas as ações CRUD.
+- Comunique-se com um back- end de API REST construído com que executa ações CRUD (GET, POST, PUT, DELETE) .
+- Tenha 3 rotas ou mais .
+- Tenha um repositório no GitHub .
+- Tenha pelo menos 2 commits por dia em que você trabalhou.
+- Seja implantado online , permitindo que qualquer pessoa acesse e use seu aplicativo
