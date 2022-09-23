@@ -5,6 +5,8 @@ import axios from "axios";
 
 import planetsImages from "../planetsImages.json";
 
+import { Link } from "react-router-dom";
+
 const Home = (props) => {
   const [planets, setPlanets] = useState([]);
 
@@ -70,9 +72,11 @@ const Home = (props) => {
         {planets &&
           planetsImages.map((planet) => {
             return (
-              <div className={`${planet.planet} planeta`}>
-                <img src={planet.image} />{" "}
-              </div>
+              <Link to={`/planeta/${planet.id}`}>
+                <div className={`${planet.planet} planeta`}>
+                  <img src={planet.image} />{" "}
+                </div>
+              </Link>
             );
           })}
       </div>

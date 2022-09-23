@@ -4,9 +4,9 @@
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   border: solid 10px rgb(255, 255, 255);
   background-color: var(--color);
-  position: absolute;
-  right: 18rem;
-  top: 7rem;
+  position: relative;
+  /* right: 18rem;
+  top: 7rem; */
   width: 45vw;
   height: 46vh;
   display: flex;
@@ -25,11 +25,14 @@
 
 .peso-bg {
   width: 100%;
-  height: 66vh;
+  height: 100%;
   position: absolute;
-  top: 10rem;
+  top: 0rem;
   /* border: 1px solid white; */
-  left: 1rem;
+  left: 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* background: rgba(255, 255, 255, 0.1); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);

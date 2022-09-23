@@ -149,8 +149,8 @@
 
   .peso-container,
   .idade-container {
-    right: 6vw;
-    top: 10vh;
+    /* right: 6vw;
+    top: 10vh; */
     width: 87vw;
     height: 70vh;
   }
@@ -195,8 +195,9 @@
   }
 
   .gallery-reference {
-    top: 13rem;
-    right: -0.5rem;
+    /* top: 13rem; */
+    /* right: -0.5rem; */
+    gap: 0;
   }
 
   .home-container p {
