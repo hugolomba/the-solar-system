@@ -58,8 +58,7 @@ const Home = (props) => {
     <div className="home-container">
       <p>
         Bom vindo ao The Solar System, aqui você encontra informações e
-        curiosidades sobre o nosso sistema solar. <br />
-        Esperamos que tenha uma maravilhosa navegação.
+        curiosidades sobre o nosso sistema solar.
       </p>
       <div className="imagens-container">
         {/* {planets &&
