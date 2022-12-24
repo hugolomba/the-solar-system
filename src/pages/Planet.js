@@ -18,7 +18,7 @@ const Planet = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`https://api-solar-system.herokuapp.com/planet/${planetId.planeta}`)
+      .get(`https://solar-system-api.up.railway.app/planet/${planetId.planeta}`)
       .then((response) => {
         setPlanet(response.data);
       })
