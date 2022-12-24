@@ -31,4 +31,4 @@ The application will open in the browser on http://localhost:3000
 
 ### 🌐 LIVE DEMO
 
-[The Solar System](the-solarsystem.netlify.app)
+[The Solar System](https://the-solarsystem.netlify.app/)
