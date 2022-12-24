@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://api-solar-system.herokuapp.com/planets")
+      .get("https://solar-system-api.up.railway.app/planets")
       .then((response) => {
         setPlanets(response.data);
       });
